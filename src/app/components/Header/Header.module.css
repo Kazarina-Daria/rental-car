@@ -1,0 +1,30 @@
+.headerContainer {
+  padding: 26px 120px;
+  display: flex;
+  background-color: #F2F4F7;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  position: sticky;
+}
+
+.navList {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.navLink {
+  font-family: var(--font-manrope);
+  font-weight: 500;
+  color: #101828;
+  font-size: 16px;
+  line-height: 125%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.linkActive {
+  color: #0b44cd;
+  text-decoration: none;
+}
