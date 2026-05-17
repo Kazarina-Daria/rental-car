@@ -7,12 +7,22 @@ export interface Car {
   img: string;
   description: string;
   fuelConsumption: string;
-  engineSize: string;
-  accessories: string[];
-  functionalities: string[];
+  engine : string;
+ features: string[];
   rentalPrice: string;
   rentalCompany: string;
-  address: string;
+ location: {
+  country :string;
+  city :string;
+  address :string;
+ };
   rentalConditions: string[];
   mileage: number;
 }
+
+export type FormValues = {
+  brand: string;
+  price: string;
+  minMileage: string;
+  maxMileage: string;
+};

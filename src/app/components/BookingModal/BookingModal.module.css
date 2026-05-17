@@ -1,0 +1,51 @@
+.bookingSection {
+  border-radius: 16px;
+  padding: 32px;
+  width: 640px;
+  height: 424px;
+  background: var(--white);
+}
+
+.submitButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  padding: 12px 99px;
+  width: 576px;
+  height: 44px;
+  background: var(--light-blue);
+  line-height: 125%;
+  color: var(--white);
+  border : none;
+}
+
+.textField,
+.field {
+  background: var(--inputs);
+  border-radius: 12px;
+  padding: 12px 20px;
+  width: 576px;
+  border : none;
+  height: 48px;
+}
+
+.textField {
+  height: 88px;
+}
+
+.description {
+  margin-top: 8px;
+  color: var(--gray);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.titleBooking {
+  font-size: 20px;
+  font-weight: 600;
+}

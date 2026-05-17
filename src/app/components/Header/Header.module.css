@@ -1,7 +1,7 @@
 .headerContainer {
   padding: 26px 120px;
   display: flex;
-  background-color: #F2F4F7;
+  background-color: var(--white);
   justify-content: space-between;
   align-items: center;
   top: 0;

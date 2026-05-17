@@ -9,11 +9,18 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.100.10",
     "axios": "^1.16.0",
+    "formik": "^2.4.9",
     "ldrs": "^1.1.9",
     "next": "16.2.6",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "react-hot-toast": "^2.6.0",
+    "react-paginate": "^8.3.0",
+    "react-select": "^5.10.2",
+    "react-toastify": "^11.1.0",
+    "yup": "^1.7.1"
   },
   "devDependencies": {
     "@types/node": "^20",

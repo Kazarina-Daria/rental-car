@@ -1,0 +1,152 @@
+.buttonSearch{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+padding: 12px 51px;
+width: 156px;
+height: 44px;
+background: var(--light-blue);
+border: none;
+color: #fff;
+  cursor: pointer;
+font-weight: 600;
+}
+
+.filterContainer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-top: 84px;
+  height: 96px;
+  
+}
+.inputsContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+gap: 16px;
+}
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  border : none;
+  line-height: 1.28;
+  color: var(--gray);
+}
+
+.selectBrand,
+.selectPrice,
+.inputFrom,
+.inputTo {
+  height: 48px;
+  background-color: var(--inputs);
+  border: none;
+  border-radius: 14px;
+  padding: 14px 18px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.11;
+  color: #121417;
+  outline: none;
+}
+
+.selectBrand {
+  width: 204px;
+  background: var(--white);
+}
+
+.selectPrice {
+  width: 196px;
+  background: var(--white);
+}
+
+.mileageGroup {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.mileageInputs {
+  display: flex;
+  
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.inputPrefix {
+  position: absolute;
+  left: 18px;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+
+.inputFrom {
+  width: 160px;
+  padding-left: 70px; 
+  border-radius: 12px 0 0 12px;
+  border-right: 1px solid rgba(138, 138, 137, 0.2);
+  background: var(--white);
+}
+
+.inputTo {
+  width: 160px;
+  padding-left: 45px;
+  border-radius:  0 12px 12px 0;
+  background: var(--white);
+}
+
+.buttonSearch:hover {
+  background-color: var(--dark-blue);
+}
+
+.buttonSearch:disabled {
+  background-color: var(--button);
+  cursor: not-allowed;
+}
+
+.errorMessage {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  color: #ef5050;
+  font-size: 12px;
+}
+.selectBrand,
+.selectPrice {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='14' height='8' viewBox='0 0 14 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1L7 7L13 1' stroke='%23121417' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 18px center; 
+  padding-right: 45px; 
+}
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+  gap: 8px;
+}
+.buttonClear{
+  display: flex;
+  border: none;
+  background: none;
+  color: var(--gray);
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
