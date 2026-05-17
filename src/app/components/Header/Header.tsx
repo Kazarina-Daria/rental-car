@@ -31,7 +31,7 @@ export default function Header() {
               <Link
                 href="/catalog"
                 className={
-                  pathname.startsWith("/catalog") ? css.linkActive : css.navLink
+                  pathname === "/catalog" ? css.linkActive : css.navLink
                 }
               >
                 Catalog

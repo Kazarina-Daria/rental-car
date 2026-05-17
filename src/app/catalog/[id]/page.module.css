@@ -2,7 +2,9 @@
   padding-top: 84px;
   padding-bottom: 104px;
   display: flex;
-  gap: 72px;
+  gap: 32px;
+  width: 1200px;
+  margin : 0 auto;
 }
 .leftSide {
   display: flex;
@@ -16,7 +18,11 @@
   border-radius: 19px;
   overflow: hidden;
 }
-
+.rightSide{
+    background-color: var(--white);
+    border-radius: 16px;
+padding: 32px 24px;
+}
 .brandBox {
   margin-bottom: 68px;
 }
@@ -57,7 +63,7 @@
 }
 
 .conditionBox {
-  margin-bottom: 110px;
+  margin-bottom:24px;
 }
 .conditionList {
   display: flex;
@@ -74,13 +80,21 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+
 }
 .item {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-
+.featuresBox,
 .specificationsBox {
-  margin-bottom: 110px;
+  margin-top: 24px;
+}
+
+.lines{
+border: 1px solid var(--gray-light);
+width: 480px;
+height: 0px;
+margin-top: 24px;
 }
