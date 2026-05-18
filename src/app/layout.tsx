@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Header/Header";
-import { ToastContainer, Zoom } from "react-toastify/unstyled";
+import { ToastContainer, Zoom } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import TanstackProvider from "./components/TanStackProvider/TanStackProvider";
 

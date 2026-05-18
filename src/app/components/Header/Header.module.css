@@ -25,6 +25,6 @@
 }
 
 .linkActive {
-  color: #0b44cd;
+  color: var(--light-blue);;
   text-decoration: none;
 }

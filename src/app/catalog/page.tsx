@@ -7,7 +7,7 @@ export default async function CatalogPage (){
   const queryClient = new QueryClient();
   await queryClient.prefetchQuery({
     queryKey: ['cars', 1, ''],
-    queryFn: () => fetchCars({ page: 1, limit: 12 }),
+    queryFn: () => fetchCars({ page: 1, perPage: 12 }),
   });
 
   return (

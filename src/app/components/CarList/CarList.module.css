@@ -66,7 +66,7 @@
 }
 
 .accent {
-  color: var(--button);
+  color: var(--light-blue);
 }
 
 .price {
@@ -78,6 +78,9 @@
   display: flex;
   flex-direction: column;
   gap: 4px;
+    border-radius: 8px;
+padding: 8px;
+background: var(--bg);
 }
 
 .textLine {
@@ -93,7 +96,7 @@
   margin-top: 28px;
   width: 100%;
   padding: 12px;
-  background-color: var(--button);
+  background-color:var(--light-blue);
   color: var(--white);
   border: none;
   border-radius: 12px;
@@ -102,7 +105,7 @@
 }
 
 .button:hover {
-  background-color: var(--button-hover);
+background: var(--dark-blue);
 }
 
 .loadMoreBtn {

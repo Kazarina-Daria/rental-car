@@ -18,7 +18,7 @@ export default function BookingModal(props: BookingModalProps) {
   const validationSchema = Yup.object().shape({
     name: Yup.string().required("Name is required"),
     email: Yup.string().email("Invalid email").required("Email is required"),
-    comment: Yup.string().max(500, "Comment must be at almost 500 characters"),
+    comment: Yup.string().required("Comment is required").max(500, "Comment must be at almost 500 characters"),
   });
 
   return (
@@ -57,7 +57,7 @@ export default function BookingModal(props: BookingModalProps) {
           />
 
           <button type="submit" className={css.submitButton}>
-            Buchen
+           Send
           </button>
         </Form>
       </Formik>

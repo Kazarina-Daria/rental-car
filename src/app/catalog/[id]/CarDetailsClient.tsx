@@ -2,7 +2,7 @@
 
 import { useMutation } from "@tanstack/react-query";
 import { AxiosError } from "axios";
-import toast from "react-hot-toast";
+import { toast } from "react-toastify";
 import Image from "next/image";
 import { bookingRequest, BookingResponse } from "../../../../lib/api";
 import { BookingRequest } from "../../../../types/bookingModal";
@@ -34,7 +34,10 @@ export default function CarDetailsClient({
     },
     onError: (err) => {
       const errorMessage =
-        err.response?.data?.message || err.message || "Invalid request.";
+        err.response?.data?.message ||
+        (err.response?.data ? JSON.stringify(err.response.data) : undefined) ||
+        err.message ||
+        "Invalid request.";
       toast.error(errorMessage);
     },
   });
