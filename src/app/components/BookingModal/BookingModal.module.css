@@ -21,6 +21,11 @@
 }
 
 .textField,
+.field:focus{
+  outline : none;
+}
+
+.textField,
 .field {
   background: var(--inputs);
   border-radius: 12px;
