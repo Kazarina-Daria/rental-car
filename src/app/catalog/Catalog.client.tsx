@@ -11,7 +11,12 @@ import { useInfiniteQuery } from "@tanstack/react-query";
 export default function Catalog() {
   const [brands, setBrands] = useState<string[]>([]);
   const [prices, setPrices] = useState<number[]>([]);
-  const [filters, setFilters] = useState<FormValues>({});
+  const [filters, setFilters] = useState<FormValues>({
+    brand: "",
+    price: "",
+    minMileage: "",
+    maxMileage: "",
+  });
 
   const LIMIT = 12;
 
