@@ -67,8 +67,7 @@ export const CarList = ({ items, handleLoad, isButton, fetching }: CarListProps)
                   <p className={css.textLine}>
                     {car.model} | {mileage}
                   </p>
-                </div>
-                
+                </div>    
                   <button className={css.button} type="button" onClick = {() => router.push(`/catalog/${car.id}`)}>Read more</button>
               </li>
             );
